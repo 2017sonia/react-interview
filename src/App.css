@@ -1,0 +1,109 @@
+body {  
+  background: url('../public/img/bg-body.jpg') no-repeat 0 0 #f7f7f7;
+  background-size: cover;
+  /*filter:opacity(20%)*/
+}
+.card {
+  background: #f2f2f2;
+}
+.card-title {
+  font-size: 1.2rem !important;
+}
+.card-subtitle {
+  margin: 0;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.likes-dislikes button {
+  border: 1px solid #8e8888;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin: 0 5px;
+}
+.likes-dislikes button.button-active {
+  background-color: #139613;
+  border: 1px solid #057c05;
+}
+.likes {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-delete {
+  border: 1px solid #f4dada;
+  background: #ffe9e9;
+  color: #b30909;
+  font-size: .8em;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.delete:hover, .delete:focus {
+  border: 1px solid #f7caca;
+  background: #fcdfdf;
+  font-size: .8em;
+}
+
+/*--- filters --*/
+.filters {
+  background: #fafafa;
+}
+.filters h3 {
+  margin-bottom: 0;
+}
+.filters-list div {
+  margin: 0 .5em 0 0;
+}
+.filters-list input {
+  height: 15px;
+  width: 15px;
+}
+.filters-list label, .pagination-number label {
+  margin: 0 .25em
+}
+/*--- end filters --*/
+
+/*--- Start pagination ---*/
+.pagination-number {
+  background: #edf2f4;
+}
+.paginationBttns {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: .25em;
+  background: #191f2a;
+  color: #fff!important;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px 2px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.paginationBttns a:hover, .paginationActive a {
+  color: white;
+  background-color: #545b62;
+  cursor: pointer;
+}
+
+.paginationDisabled a, .paginationDisabled a:hover {
+  color: #999797;
+  background-color: #e2e2e200;
+}
+button.page-link-button {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 0 0.25em;
+}
+/*--- End pagination ---*/
